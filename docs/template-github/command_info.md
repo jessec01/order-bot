@@ -79,3 +79,28 @@ To inspect what happened in an exact commit and the lines of code that changed (
 ```bash
 git show <commit-hash>
 ```
+
+## 4. Default Branch Conflict and History Desynchronization
+
+When initializing the repository using a template or when making the first push, GitHub automatically established a branch called docs-templates-github as the main branch (Default). This caused that, although locally one worked in main, the changes were not reflected correctly in the web interface or seemed "not to be saved" due to the discrepancy between the server's entry point and the local history.
+
+🛠 Solution Applied (Step by Step)
+Remote Pointer Change:
+
+Settings > Branches was entered in GitHub to manually change the Default Branch from docs-templates-github to main.
+
+Local References Cleanup:
+
+```bash
+git fetch --prune origin
+```
+
+Forced Synchronization (Overwriting):
+
+To ensure that the local code (Node/TS) was the "only truth", a Forced Push was used:
+
+```bash
+git push origin main --force
+```
+
+This overwrote the branch history on the server with the current state of the local folder, eliminating any trace of the previous template files.
