@@ -1,23 +1,23 @@
-## Descripción
+## Description
 
-Por favor, incluye un resumen de los cambios realizados y el problema que solucionan. También incluye información sobre las posibles dependencias o cambios colaterales.
+Please include a summary of the changes made and the problem they solve. Also include information about possible dependencies or collateral changes.
 
-Closes #[Número de Issue, ej: #12]
+Closes #[Issue Number, e.g.: #12]
 
-## Tipo de cambio
+## Type of change
 
-*Por favor, marca con una `x` las opciones que apliquen a tu Pull Request.*
+_Please mark with an `x` the options that apply to your Pull Request._
 
-- [ ] **Bug fix** (Reparación de un error no intencional que rompe el funcionamiento base)
-- [ ] **New feature** (Nueva funcionalidad o característica incorporada)
-- [ ] **Refactor** (Mejora, limpieza u optimización del código existente)
-- [ ] **Documentation update** (Cambios en la documentación o ReadMe)
+- [ ] **Bug fix** (Repair of an unintentional error that breaks the base functionality)
+- [ ] **New feature** (New functionality or incorporated characteristic)
+- [ ] **Refactor** (Improvement, cleaning or optimization of existing code)
+- [ ] **Documentation update** (Changes in documentation or ReadMe)
 
-## Checklist de Calidad:
+## Quality Checklist:
 
-*Asegúrate de marcar todas las casillas aplicables.*
+_Make sure to mark all applicable boxes._
 
-- [ ] He realizado una auto-revisión y pruebas de mi propio código.
-- [ ] He comentado mi código, especialmente en las lógicas complejas de la máquina de estados.
-- [ ] Mis cambios no generan nuevas advertencias (warnings) o errores en la consola.
-- [ ] Comprobé que el bot se reinicia y persiste el estado de manera adecuada.
+- [ ] I have performed a self-review and tested my own code.
+- [ ] I have commented on my code, especially in the complex logic of the state machine.
+- [ ] My changes do not generate new warnings or errors in the console.
+- [ ] I verified that the bot restarts and persists the state properly.
